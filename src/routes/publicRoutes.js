@@ -11,7 +11,11 @@ server.post('/cadastrar', async (req, res) => {
 
     if (emailExiste(email)) {
         const status = 401;
+<<<<<<< HEAD
+        const message = 'O e-mail ja foi utilizado!';
+=======
         const message = 'Esse e-mail já está sendo utilizado!';
+>>>>>>> 41d3214f36b9b282baa56d48df37cd3ea0de71f9
         return res.status(status).json({ status, message });
 
     }
